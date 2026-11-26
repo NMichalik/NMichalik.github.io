@@ -11,6 +11,8 @@ Custom Properties
     --light-pink: #EBD0D5;
     --cream: #FAF5EF;
     --white: #FFFDFC;
+    --sand: #EDE5D8;
+    --mauve: #A8757D;
 
     --font-heading: 'Cormorant Garamond', serif;
     --font-body: 'DM Sans', sans-serif;
@@ -379,10 +381,6 @@ About Me
     padding-bottom: 70px;
 }
 
-/*
-About Me - Picture
-*/
-
 .about-portrait {
     width: 100%;
     max-width: 400px;
@@ -414,6 +412,307 @@ About Me - Picture
     margin-top: 16px;
 }
 
+.journey-heading {
+    margin-bottom: 30px;
+}
+
+.journey-heading h2 {
+    font-size: 44px;
+    margin: 12px 0 0;
+}
+
+.journey-layout {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.journey-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.journey-illustration img {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+.journey-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.journey-item {
+    border-left: 3px solid var(--pink);
+    padding-left: 20px;
+}
+
+.journey-date {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--mauve);
+    margin-bottom: 8px;
+}
+
+.journey-item h3 {
+    font-family: var(--font-body);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 6px;
+}
+
+.journey-subtitle {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.journey-item p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.about-section {
+    border-top: 1px solid var(--oat);
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+.about-section-heading {
+    margin-bottom: 30px;
+}
+
+.about-section-heading h2 {
+    font-size: 44px;
+    margin: 12px 0 0;
+}
+
+.about-section-heading h2 em {
+    font-style: italic;
+}
+
+.about-section-heading p {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: 16px 0 0;
+}
+
+.toolkit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.toolkit-card {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--sand);
+    border: 1px solid var(--oat);
+    border-radius: 4px;
+
+    padding: 28px;
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.toolkit-card:nth-child(2),
+.toolkit-card:nth-child(3) {
+    background-color: var(--light-pink);
+}
+
+.toolkit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(74, 48, 40, 0.06);
+}
+
+.toolkit-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+.toolkit-icon {
+    width: 28px;
+    height: 28px;
+
+    fill: none;
+    stroke: var(--mauve);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.toolkit-number {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-style: italic;
+    color: var(--brown);
+}
+
+.toolkit-card h3 {
+    font-size: 30px;
+    margin: 0 0 12px;
+}
+
+.toolkit-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0 0 20px;
+}
+
+.toolkit-skills {
+    border-top: 1px solid var(--oat);
+    padding-top: 16px;
+    margin-top: auto;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.thinking-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.thinking-intro blockquote {
+    font-family: var(--font-heading);
+    font-size: 44px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.15;
+
+    color: var(--mauve);
+    margin: 0;
+}
+
+.thinking-intro .section-divider {
+    margin: 24px 0;
+}
+
+.thinking-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.thinking-step {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    border-bottom: 1px solid var(--oat);
+    padding: 20px 0;
+}
+
+.thinking-step:first-child {
+    padding-top: 0;
+}
+
+.thinking-step:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.thinking-number {
+    font-family: var(--font-heading);
+    font-size: 38px;
+    font-style: italic;
+    color: var(--mauve);
+
+    flex-shrink: 0;
+    min-width: 40px;
+}
+
+.thinking-step h3 {
+    font-family: var(--font-body);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 6px;
+}
+
+.thinking-step p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.personal-layout {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.personal-content {
+    max-width: 650px;
+}
+
+.personal-content .about-section-heading {
+    margin-bottom: 24px;
+}
+
+.personal-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0 0 16px;
+}
+
+.personal-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal-illustration img {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+}
+
+
+/*
+Decorative Divider
+*/
+
+.decorative-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    margin-top: 60px;
+}
+
+.decorative-divider::before,
+.decorative-divider::after {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: var(--pink);
+}
+
+.decorative-divider span {
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--pink);
+    transform: rotate(45deg);
+}
 
 /*
 Mobile
@@ -527,6 +826,71 @@ Mobile
 
     .journey-item p {
         font-size: 14px;
+    }
+
+    .about-section {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .about-section-heading h2 {
+        font-size: 36px;
+    }
+
+    .about-section-heading {
+        margin-bottom: 24px;
+    }
+
+    .toolkit-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .toolkit-card {
+        padding: 24px;
+    }
+
+    .toolkit-card h3 {
+        font-size: 28px;
+    }
+
+    .toolkit-card:nth-child(3) {
+        background-color: var(--sand);
+    }
+
+    .toolkit-card:nth-child(4) {
+        background-color: var(--light-pink);
+    }
+
+    .thinking-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .thinking-intro blockquote {
+        font-size: 36px;
+    }
+
+    .thinking-step {
+        gap: 16px;
+    }
+
+    .thinking-number {
+        font-size: 32px;
+        min-width: 32px;
+    }
+
+    .personal-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .personal-illustration img {
+        max-width: 140px;
+    }
+
+    .decorative-divider {
+        margin-top: 35px;
     }
 
 }
