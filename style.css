@@ -313,6 +313,108 @@ Contact Cards
     outline-offset: 4px;
 }
 
+
+/*
+About Me
+*/
+
+.about-hero {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    gap: 60px;
+
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.about-hero-content {
+    max-width: 600px;
+}
+
+.about-hero-content h1 {
+    font-size: 76px;
+    line-height: 1;
+    margin: 24px 0;
+}
+
+.about-hero-content h1 em {
+    color: var(--pink);
+    font-style: italic;
+}
+
+.about-hero-content .section-divider {
+    margin: 30px 0 20px;
+}
+
+.about-hero-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 0 16px;
+}
+
+.about-hero-content .about-lead {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.about-link {
+    display: inline-block;
+
+    font-size: 14px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--pink);
+
+    transition: color 0.2s ease;
+}
+
+.about-link:hover {
+    color: var(--dark-brown);
+}
+
+.journey-section {
+    border-top: 1px solid var(--oat);
+
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+/*
+About Me - Picture
+*/
+
+.about-portrait {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.portrait-frame {
+    background-color: var(--light-pink);
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.portrait-frame img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+    object-position: center;
+
+    background-color: var(--white);
+}
+
+.about-portrait figcaption {
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+
+    margin-top: 16px;
+}
+
+
 /*
 Mobile
 */
@@ -376,4 +478,55 @@ Mobile
     .contact-card {
         padding: 30px 20px;
     }
+
+    .about-hero {
+        grid-template-columns: 1fr;
+        gap: 35px;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 56px;
+    }
+
+    .about-hero-content .about-lead {
+        font-size: 16px;
+    }
+
+    .about-portrait {
+        max-width: 280px;
+    }
+
+    .journey-section {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .journey-heading h2 {
+        font-size: 36px;
+    }
+
+    .journey-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .journey-illustration img {
+        max-width: 140px;
+    }
+
+    .journey-item {
+        padding-left: 16px;
+    }
+
+    .journey-item h3 {
+        font-size: 18px;
+    }
+
+    .journey-item p {
+        font-size: 14px;
+    }
+
 }
