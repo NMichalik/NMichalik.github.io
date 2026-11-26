@@ -838,6 +838,11 @@ Gallery
     margin-bottom: 24px;
 }
 
+.pink-emphasis {
+    color: var(--pink);
+    font-style: italic;
+}
+
 /*
 Mobile
 */
