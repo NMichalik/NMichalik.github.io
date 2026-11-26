@@ -714,9 +714,139 @@ Decorative Divider
     transform: rotate(45deg);
 }
 
+
+/*
+Gallery - Through My Lens
+*/
+
+.gallery-page {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.gallery-back {
+    display: inline-block;
+    font-size: 13px;
+    color: var(--brown);
+}
+
+.gallery-back:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--pink);
+    text-underline-offset: 5px;
+}
+
+
+/*
+Gallery Introduction
+*/
+
+.gallery-intro {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 50px 0 60px;
+    text-align: center;
+}
+
+.gallery-intro h1 {
+    font-size: 76px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.gallery-intro h1 em {
+    color: var(--pink);
+}
+
+.gallery-intro p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 12px 0;
+}
+
+.gallery-intro .gallery-lead {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-style: italic;
+    color: var(--dark-brown);
+}
+
+
+/*
+Gallery
+*/
+
+.gallery-grid {
+    column-count: 3;
+    column-gap: 24px;
+
+    border-top: 1px solid var(--oat);
+    padding-top: 35px;
+}
+
+.gallery-item {
+    break-inside: avoid;
+    margin: 0 0 32px;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    border-radius: 4px;
+}
+
+.gallery-item figcaption {
+    padding: 12px 0;
+}
+
+.gallery-item h2 {
+    font-size: 26px;
+    font-style: italic;
+    margin: 0 0 4px;
+}
+
+.gallery-item figcaption span {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--brown);
+}
+
+.gallery-ending {
+    text-align: center;
+    border-top: 1px solid var(--oat);
+    padding-top: 40px;
+}
+
+.gallery-ending .decorative-divider {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.gallery-ending h2 {
+    font-size: 36px;
+    font-style: italic;
+    margin: 0 0 16px;
+}
+
+.gallery-ending p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
 /*
 Mobile
 */
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        column-count: 2;
+    }
+}
 
 @media (max-width: 600px) {
     .header-inner {
@@ -891,6 +1021,30 @@ Mobile
 
     .decorative-divider {
         margin-top: 35px;
+    }
+
+    .gallery-grid {
+        column-count: 1;
+    }
+
+    .gallery-intro {
+        padding: 35px 0;
+    }
+
+    .gallery-intro h1 {
+        font-size: 52px;
+    }
+
+    .gallery-intro .gallery-lead {
+        font-size: 24px;
+    }
+
+    .gallery-item {
+        margin-bottom: 24px;
+    }
+
+    .gallery-ending h2 {
+        font-size: 28px;
     }
 
 }
