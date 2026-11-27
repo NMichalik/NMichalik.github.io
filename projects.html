@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,23 +6,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nat's Stats | Projects</title>
+    <title>Nat's Stats | Selected Work</title>
 
     <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 
+    <!-- Header -->
     <div id="header"></div>
 
     <main>
 
-        <!-- do stuff here -->
+        <section class="page-intro">
+            <div class="container">
+
+                <span class="eyebrow">Portfolio</span>
+
+                <h1>Selected Work</h1>
+
+                <div class="decorative-line"></div>
+
+                <p>
+                    A collection of projects exploring data,
+                    automation and business intelligence.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="filter-section">
+            <div class="container">
+
+                <div class="project-filters">
+
+                    <button type="button" class="filter-btn active"
+                            data-filter="all" aria-pressed="true">
+                        All Projects
+                    </button>
+
+                    <button type="button" class="filter-btn"
+                            data-filter="data-analysis" aria-pressed="false">
+                        Data Analysis
+                    </button>
+
+                    <button type="button" class="filter-btn"
+                            data-filter="power-bi" aria-pressed="false">
+                        Power BI
+                    </button>
+
+                    <button type="button" class="filter-btn"
+                            data-filter="automation" aria-pressed="false">
+                        Automation
+                    </button>
+
+                    <button type="button" class="filter-btn"
+                            data-filter="sql" aria-pressed="false">
+                        SQL
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <div class="container">
+
+                <article class="featured-project"
+                    data-category="power-bi data-analysis">
+
+                    <div class="project-image">
+                        <img src="Pictures/inprogress.JPEG"
+                             alt="Project in progress">
+                    </div>
+
+                    <div class="project-content">
+
+                        <span class="eyebrow">
+                            01 / Featured Project
+                        </span>
+
+                        <h2>Workforce Performance Analytics</h2>
+
+                        <p>
+                            An interactive Power BI reporting solution
+                            designed to analyse workforce productivity,
+                            operational performance and employee KPIs.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Power BI</span>
+                            <span>Power Query</span>
+                            <span>Data Modelling</span>
+                        </div>
+
+                        <span class="project-status">
+                            In development
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+
+                <h2 class="section-heading">More Projects</h2>
+
+                <div class="projects-grid">
+
+                    <article class="project-card"
+                        data-category="automation">
+
+                        <div class="project-image">
+                            <img src="Pictures/inprogress.JPEG"
+                                 alt="Project in progress">
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="eyebrow">02 / Project</span>
+
+                            <h2>Automated Reporting</h2>
+
+                            <p>
+                                Streamlining repetitive reporting
+                                processes through Excel and VBA
+                                automation.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Excel</span>
+                                <span>VBA</span>
+                                <span>Automation</span>
+                            </div>
+
+                            <span class="project-status">
+                                Planned project
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                    <article class="project-card"
+                        data-category="sql power-bi data-analysis">
+
+                        <div class="project-image">
+                        <img src="Pictures/inprogress.JPEG"
+                             alt="Project in progress">
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="eyebrow">03 / Project</span>
+
+                            <h2>Retail Sales Analytics</h2>
+
+                            <p>
+                                Exploring sales trends, product
+                                performance and commercial insights
+                                through data analysis.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>SQL</span>
+                                <span>Power BI</span>
+                                <span>Data Analysis</span>
+                            </div>
+
+                            <span class="project-status">
+                                Planned project
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
 
     </main>
 
+
     <div id="footer"></div>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 
 </body>
 
